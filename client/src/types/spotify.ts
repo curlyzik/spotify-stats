@@ -29,6 +29,10 @@ export interface Track {
   album: Album;
   duration_ms: number;
   popularity: number;
+  href?: string;
+  external_urls?: {
+    spotify: string;
+  };
 }
 
 export interface AudioFeatures {
@@ -58,7 +62,7 @@ export interface User {
   images?: Image[];
 }
 
-export type TimeFrame = 'short_term' | 'medium_term' | 'long_term';
+export type TimeFrame = "short_term" | "medium_term" | "long_term";
 
 export interface TopArtist extends Artist {
   // Any additional fields specific to top artists
