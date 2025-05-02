@@ -10,7 +10,7 @@ interface AuthTokens {
   expiresAt: number;
   tokenType: string;
   scope: string;
-}
+} 
 
 interface User {
   id: string;
