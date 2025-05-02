@@ -21,7 +21,7 @@ interface User {
   };
 }
 
-interface AuthContextType {
+interface AuthContextType { 
   user: User | null;
   tokens: AuthTokens | null;
   isLoading: boolean;
